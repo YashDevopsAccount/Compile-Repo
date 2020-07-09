@@ -1,5 +1,8 @@
-class Simple{  
-    public static void main(String args[]){  
-     System.out.println("Hello Java");  
-    }  
-} 
+node{
+stage('SCM CheckOut'){
+  git 'https://github.com/YashDevopsAccount/Compile-Repo'
+  }
+  stage ('Compile-Package'){
+  sh 'mvn package'
+  }
+  }
